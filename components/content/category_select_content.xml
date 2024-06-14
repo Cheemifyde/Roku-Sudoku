@@ -1,19 +1,26 @@
 <?xml version = "1.0" encoding = "utf-8" ?>
 <component name = "CategorySelectContent" extends = "ContentNode" >
   <children >
-    <ContentNode title = "" >
-      <ContentNode 
-        HDPosterUrl = "http://10.0.0.167:8080/images/thumbnail-clothes.jpg" 
-        title = "Clothes" 
-        description = "ClothesSelectContent" />
-      <ContentNode 
-        HDPosterUrl = "http://10.0.0.167:8080/images/thumbnail-toys.jpg" 
-        title = "Toys" 
-        description = "ToysSelectContent" />
-      <ContentNode 
-        HDPosterUrl = "http://10.0.0.167:8080/images/thumbnail-games.jpg" 
-        title = "Games"
-        description = "GamesSelectContent" />
-    </ContentNode>
+    <ContentNode 
+      HDPosterUrl = "http://10.0.0.167:8080/images/thumbnail-clothes.jpg"  
+      description = "HouseholdSelectContent" />
+    <ContentNode 
+      HDPosterUrl = "http://10.0.0.167:8080/images/thumbnail-toys.jpg" 
+      description = "AppliancesSelectContent" />
+    <ContentNode 
+      HDPosterUrl = "http://10.0.0.167:8080/images/thumbnail-games.jpg" 
+      description = "ToysSelectContent" />
+    <ContentNode 
+      HDPosterUrl = "http://10.0.0.167:8080/images/thumbnail-clothes.jpg" 
+      description = "GamesSelectContent" />
+    <ContentNode 
+      HDPosterUrl = "http://10.0.0.167:8080/images/thumbnail-clothes.jpg" 
+      description = "ClothesSelectContent" />
+    <ContentNode 
+      HDPosterUrl = "http://10.0.0.167:8080/images/thumbnail-clothes.jpg" 
+      description = "AccessoriesSelectContent" />
+    <ContentNode 
+      HDPosterUrl = "http://10.0.0.167:8080/images/thumbnail-clothes.jpg" 
+      description = "ElectronicsSelectContent" />
   </children>
 </component>
