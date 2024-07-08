@@ -28,7 +28,7 @@
     <Label
       id="sudoku_title"
       text="s u d o k u"
-      translation="[750, 500]"
+      translation="[600, 600]"
       font="font:Outfit-Light">
     <Font role="font" uri = "pkg:/fonts/Outfit-Light.ttf" size="100"/>
     </Label>
