@@ -1,6 +1,7 @@
 <?xml version = "1.0" encoding = "utf-8" ?>
 <component name = "CategorySelectContent" extends = "ContentNode" >
   <children >
+   <ContentNode title = "" >
     <ContentNode 
       HDPosterUrl = "http://172.20.10.4:8080/images/clothes-thumbnail.png"  
       description = "HouseholdSelectContent" />
@@ -22,5 +23,6 @@
     <ContentNode 
       HDPosterUrl = "http://172.20.10.4:8080/images/electronics-thumbnail.png" 
       description = "ElectronicsSelectContent" />
+    </ContentNode>
   </children>
 </component>
