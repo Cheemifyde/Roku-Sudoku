@@ -45,8 +45,8 @@ end sub
 
 sub onCategorySelected(obj)
 	? "onCategorySelected:", m.category_select_screen.getField("selected_category_content")
-	? "http://192.168.43.99:8080/content/" + m.category_select_screen.getField("selected_category_content") + ".xml"
-	m.content_select_screen.contenturi = "http://192.168.43.99:8080/content/" + m.category_select_screen.getField("selected_category_content") + ".xml"
+	? "http://172.20.10.4:8080/content/" + m.category_select_screen.getField("selected_category_content") + ".xml"
+	m.content_select_screen.contenturi = "http://172.20.10.4:8080/content/" + m.category_select_screen.getField("selected_category_content") + ".xml"
 	? m.content_select_screen.contenturi
 	m.category_select_screen.visible=false
 	m.content_select_screen.visible=true
