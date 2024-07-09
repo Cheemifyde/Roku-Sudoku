@@ -21,7 +21,7 @@
     <Label
       id="roku_title"
       text="roku"
-      translation="[500, 50]"
+      translation="[450, 50]"
       font="font:Outfit-Bold">
     <Font role="font" uri = "pkg:/fonts/Outfit-Bold.ttf" size="500"/>
     </Label>
