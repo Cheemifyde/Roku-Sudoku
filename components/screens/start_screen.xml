@@ -21,21 +21,21 @@
     <Label
       id="roku_title"
       text="roku"
-      translation="[850, 100]"
+      translation="[750, 100]"
       font="font:Outfit-Bold">
     <Font role="font" uri = "pkg:/fonts/Outfit-Bold.ttf" size="500"/>
     </Label>
     <Label
       id="sudoku_title"
       text="s u d o k u"
-      translation="[600, 900]"
+      translation="[750, 600]"
       font="font:Outfit-Light">
     <Font role="font" uri = "pkg:/fonts/Outfit-Light.ttf" size="100"/>
     </Label>
     <Button
       id="categories_button"
       text="Categories"
-      translation="[500, 600]"
+      translation="[500, 400]"
       iconUri=""
       focusedIconUri=""
       maxWidth="500"
@@ -44,7 +44,7 @@
     <Button
       id="wishlist_button"
       text="Wishlist"
-      translation="[1000, 600]"
+      translation="[1000, 400]"
       iconUri=""
       focusedIconUri="" 
       maxWidth="500"
