@@ -21,21 +21,21 @@
     <Label
       id="roku_title"
       text="roku"
-      translation="[500, 100]"
+      translation="[500, 50]"
       font="font:Outfit-Bold">
     <Font role="font" uri = "pkg:/fonts/Outfit-Bold.ttf" size="500"/>
     </Label>
     <Label
       id="sudoku_title"
       text="s u d o k u"
-      translation="[750, 600]"
+      translation="[750, 550]"
       font="font:Outfit-Light">
     <Font role="font" uri = "pkg:/fonts/Outfit-Light.ttf" size="100"/>
     </Label>
     <Button
       id="categories_button"
       text="Categories"
-      translation="[500, 800]"
+      translation="[600, 800]"
       iconUri=""
       focusedIconUri=""
       maxWidth="500"
