@@ -7,7 +7,7 @@ function init()
 	m.details_screen = m.top.findNode("details_screen")
 	m.videoplayer = m.top.findNode("videoplayer")
 	m.error_dialog = m.top.findNode("error_dialog")
-	m.scan_poster = m.top.findNode("scan_poster")
+	m.wishlist_screen = m.top.findNode("wishlist_screen")
 	initializeVideoPlayer()
 
 	m.splash_screen.observeField("splash_finished", "onSplashFinished")	
@@ -45,8 +45,8 @@ end sub
 
 sub onCategorySelected(obj)
 	? "onCategorySelected:", m.category_select_screen.getField("selected_category_content")
-	? "http://172.20.10.4:8080/content/" + m.category_select_screen.getField("selected_category_content") + ".xml"
-	m.content_select_screen.contenturi = "http://172.20.10.4:8080/content/" + m.category_select_screen.getField("selected_category_content") + ".xml"
+	? "http://192.168.43.99:8080/content/" + m.category_select_screen.getField("selected_category_content") + ".xml"
+	m.content_select_screen.contenturi = "http://192.168.43.99:8080/content/" + m.category_select_screen.getField("selected_category_content") + ".xml"
 	? m.content_select_screen.contenturi
 	m.category_select_screen.visible=false
 	m.content_select_screen.visible=true
@@ -84,6 +84,9 @@ end sub
 
 sub onWishlistButtonPressed(obj)
 	? "wishlist"
+	m.start_screen.visible = false
+	m.wishlist_screen.visible = true
+	m.wishlist_screen.setFocus(true)
 end sub
 
 sub onPlayerStateChanged(obj)

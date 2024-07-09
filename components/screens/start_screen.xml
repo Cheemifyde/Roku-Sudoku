@@ -12,12 +12,6 @@
 		    alias="wishlist_button.buttonSelected" />
   </interface>
   <children>
-    <!-- <Poster
-      id="background"
-      translation="[0, 0]"
-      width="1920"
-      height="1080"
-      uri="http://172.20.10.4:8080/images/background.jpg" /> -->
     <Label
       id="roku_title"
       text="roku"

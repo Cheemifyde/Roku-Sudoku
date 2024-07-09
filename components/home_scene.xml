@@ -2,6 +2,10 @@
 <component name="home_scene" extends="Scene" initialFocus="splash_screen">
   <script type="text/brightscript" uri="pkg:/components/home_scene.brs" />
   <children>
+    <wishlist_screen
+      id="wishlist_screen"
+      visible="false"
+      translation="[0,0]" />
     <splash_screen
       id="splash_screen"
       visible="true"
