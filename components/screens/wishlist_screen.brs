@@ -11,6 +11,7 @@ sub onVisibleChange()
   if m.top.visible = true then
 	playWishlistAnimation()
   end if
+    focusWishlist()
 end sub
 
 
@@ -23,11 +24,12 @@ sub playWishlistAnimation()
 	m.wishlist_video.visible = true
 	m.wishlist_video.setFocus(true)
 	m.wishlist_video.control = "play"
+	? wishlist_video.state
 end sub
 
-sub focusWishlist(obj)
-    if m.top.getField("wishlist_finished") = "finished" then
-        m.wishlist_video.visible = false
-        m.title.setFocus(true)
-    end if
+sub focusWishlist()
+	if wishlist_video.state = "finished" then
+    	m.wishlist_video.visible = false
+    	m.title.setFocus(true)
+	end if
 end sub
