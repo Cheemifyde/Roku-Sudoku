@@ -23,13 +23,11 @@ sub playWishlistAnimation()
 	m.wishlist_video.visible = true
 	m.wishlist_video.setFocus(true)
 	m.wishlist_video.control = "play"
-	? wishlist_finished
-	? wishlist_content
 end sub
 
-' sub focusWishlist(obj)
-'     if m.top.getField("wishlist_finished") = "finished" then
-'         m.wishlist_video.visible = false
-'         m.title.setFocus(true)
-'     end if
-' end sub
+sub focusWishlist(obj)
+    if m.top.getField("wishlist_finished") = "finished" then
+        m.wishlist_video.visible = false
+        m.title.setFocus(true)
+    end if
+end sub
