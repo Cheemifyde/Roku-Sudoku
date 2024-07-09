@@ -13,4 +13,5 @@ sub playSplashAnimation()
 	m.splash_video.visible = true
 	m.splash_video.setFocus(true)
 	m.splash_video.control = "play"
+	? splash_content
 end sub

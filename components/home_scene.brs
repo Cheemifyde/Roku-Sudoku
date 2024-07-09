@@ -10,6 +10,7 @@ function init()
 	m.wishlist_screen = m.top.findNode("wishlist_screen")
 	initializeVideoPlayer()
 
+	' m.wishlist_screen.observeField("wishlist_finished", "onWishlistFinished")
 	m.splash_screen.observeField("splash_finished", "onSplashFinished")	
 	m.start_screen.observeField("categories_button_pressed", "onCategoriesButtonPressed")
 	m.start_screen.observeField("wishlist_button_pressed", "onWishlistButtonPressed")
@@ -17,9 +18,18 @@ function init()
 	m.category_select_screen.observeField("category_selected", "onCategorySelected") 
 	m.details_screen.observeField("play_button_pressed", "onPlayButtonPressed")
 	m.details_screen.observeField("buy_button_pressed", "onBuyButtonPressed")
+
+	m.splash_screen.setFocus(true)
 end function
 
+' sub onWishlistFinished(obj)
+' 	if m.splash_screen.getField("splash_finished") = "finished" then
+' 		? ">:)"
+' 	end if
+' end sub
+
 sub onSplashFinished(obj)
+	? m.splash_screen.getField("splash_finished")
 	if m.splash_screen.getField("splash_finished") = "finished" then
 		m.splash_video = m.splash_screen.findNode("splash_video")
 		m.splash_video.visible = false
