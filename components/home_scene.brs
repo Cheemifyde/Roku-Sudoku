@@ -18,8 +18,8 @@ function init()
 	m.details_screen.observeField("play_button_pressed", "onPlayButtonPressed")
 	m.details_screen.observeField("buy_button_pressed", "onBuyButtonPressed")
 
-	m.category_select_screen.visible = true
-	m.category_select_screen.setFocus(true)
+	m.start_screen.visible = true
+	m.start_screen.setFocus(true)
 end function
 
 sub onSplashFinished(obj)
