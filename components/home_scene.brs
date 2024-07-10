@@ -131,7 +131,7 @@ function onKeyEvent(key, press) as Boolean
 			m.details_screen.visible=true
 			m.details_screen.setFocus(true)
 			return true
-		else if m.category_select_screen.visible
+		else if m.category_select_screen.visible or m.wishlist_screen.visible
 			m.category_select_screen.visible=false
 			m.start_screen.visible=true
 			m.start_screen.setFocus(true)

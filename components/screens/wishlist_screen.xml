@@ -12,12 +12,12 @@
         width="1920"
         height="1080"
         enableUI = "false" />
-   <!-- <Label
+   <Label
       id="wishlist_title"
       text="wishlist"
       translation="[750, 200]"
       font="font:Outfit-Bold">
     <Font role="font" uri = "pkg:/fonts/Outfit-Bold.ttf" size="500"/>
-    </Label> -->
+   </Label>
   </children>
 </component>
