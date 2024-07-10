@@ -1,11 +1,10 @@
 sub init()
     ? "start init"
-	m.background = m.top.findNode("background")
+	m.top.backgroundColor = "0x8c52ff" 
     m.wishlist_button = m.top.findNode("wishlist_button")
     m.categories_button = m.top.findNode("categories_button")
 	m.roku_title = m.top.findNode("roku_title")
 	m.sudoku_title = m.top.findNode("sudoku_title")
-	m.label = m.top.findNode("testLabel")
     m.top.observeField("visible", "onVisibleChange")
 end sub
 

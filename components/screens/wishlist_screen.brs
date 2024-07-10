@@ -1,7 +1,7 @@
 sub init()
     ? "wishlist_screen"
 	m.wishlist_video = m.top.findNode("wishlist_video")
-	m.title = m.top.findNode("wishlist_title")
+	m.titlze = m.top.findNode("wishlist_title")
     m.top.observeField("wishlist_finished", "focusWishlist")
 	m.top.observeField("visible", "onVisibleChange")
 end sub
