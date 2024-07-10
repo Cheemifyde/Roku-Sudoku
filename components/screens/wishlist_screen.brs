@@ -11,13 +11,13 @@ sub onVisibleChange()
   if m.top.visible = true then
 	playWishlistAnimation()
   end if
-    focusWishlist()
+    ' focusWishlist()
 end sub
 
 
 sub playWishlistAnimation()
 	wishlist_content = CreateObject("roSGNode", "ContentNode")
-	wishlist_content.url = "http://192.168.43.99:8080/videos/splash-video.mp4"
+	wishlist_content.url = "http://192.168.43.99:8080/videos/wishlist-video.mp4"
 	wishlist_content.streamformat = "mp4"
 	m.wishlist_video.content = wishlist_content
 	m.wishlist_video.control ="prebuffer"
@@ -27,9 +27,9 @@ sub playWishlistAnimation()
 	? wishlist_video.state
 end sub
 
-sub focusWishlist()
-	if wishlist_video.state = "finished" then
-    	m.wishlist_video.visible = false
-    	m.title.setFocus(true)
-	end if
-end sub
+' sub focusWishlist()
+' 	if wishlist_video.state = "finished" then
+'     	m.wishlist_video.visible = false
+'     	m.title.setFocus(true)
+' 	end if
+' end sub
