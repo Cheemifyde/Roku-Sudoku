@@ -32,9 +32,5 @@
       title=""
       visible="false"
       id="error_dialog" />
-     <wishlist_screen
-      id="wishlist_screen"
-      visible="false"
-      translation="[0,0]" />
   </children>
 </component>

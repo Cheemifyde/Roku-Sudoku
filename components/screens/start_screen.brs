@@ -1,6 +1,5 @@
 sub init()
     ? "start init"
-	m.top.backgroundColor = "0x8c52ff" 
     m.wishlist_button = m.top.findNode("wishlist_button")
     m.categories_button = m.top.findNode("categories_button")
 	m.roku_title = m.top.findNode("roku_title")
