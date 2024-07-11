@@ -22,6 +22,10 @@
       id="details_screen"
       visible="false"
       translation="[0,0]" />
+    <roku_pay
+      id="roku_pay"
+      visible="false"
+      translation="[0,0]" />
      <Video
       id="videoplayer"
       visible="false"

@@ -7,7 +7,7 @@ function init()
 	m.details_screen = m.top.findNode("details_screen")
 	m.videoplayer = m.top.findNode("videoplayer")
 	m.error_dialog = m.top.findNode("error_dialog")
-	m.wishlist_screen = m.top.findNode("wishlist_screen")
+	m.roku_pay = m.top.findNode("roku_pay")
 	initializeVideoPlayer()
 
 	m.splash_screen.observeField("splash_finished", "onSplashFinished")	
