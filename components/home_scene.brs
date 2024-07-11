@@ -19,7 +19,7 @@ function init()
 	m.details_screen.observeField("buy_button_pressed", "onBuyButtonPressed")
 
 	m.splash_screen.setFocus(true)
-end function
+end function  
 
 sub onSplashFinished(obj)
 	? m.splash_screen.getField("splash_finished")
@@ -70,9 +70,8 @@ end sub
 
 sub onBuyButtonPressed(obj)
 	m.details_screen.visible = false
-	m.scan_poster.visible = true
-	m.scan_poster.setFocus(true)
-	? "scan_poster"
+	m.roku_pay.visible = true
+	m.roku_pay.setFocus(true)
 end sub
 
 sub onCategoriesButtonPressed(obj)
@@ -135,6 +134,11 @@ function onKeyEvent(key, press) as Boolean
 			m.category_select_screen.visible=false
 			m.start_screen.visible=true
 			m.start_screen.setFocus(true)
+			return true
+		else if m.roku_pay.visible 
+			m.roku_pay.visible.visible=false
+			m.details_screen.visible=true
+			m.details_screen.setFocus(true)
 			return true
 		end if
 	end if
