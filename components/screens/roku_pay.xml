@@ -2,7 +2,7 @@
 <!--********** Copyright 2016 Roku Corp.  All Rights Reserved. **********-->
 
 
-<component name="roku_pay" extends="Scene" >
+<component name="roku_pay" extends="Group" >
 
 <script type="text/brightscript" uri="pkg:/components/screens/roku_pay.brs" />
 
