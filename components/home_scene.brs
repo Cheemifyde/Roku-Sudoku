@@ -1,21 +1,37 @@
 function init()
 	? "[home_scene] init"
+	m.splash_screen = m.top.findNode("splash_screen")
+	m.start_screen = m.top.findNode("start_screen")
 	m.category_select_screen = m.top.findNode("category_select_screen")
 	m.content_select_screen = m.top.findNode("content_select_screen")
 	m.details_screen = m.top.findNode("details_screen")
 	m.videoplayer = m.top.findNode("videoplayer")
 	m.error_dialog = m.top.findNode("error_dialog")
-	m.scan_poster = m.top.findNode("scan_poster")
+	m.wishlist_screen = m.top.findNode("wishlist_screen")
 	initializeVideoPlayer()
 
+	m.splash_screen.observeField("splash_finished", "onSplashFinished")	
+	m.start_screen.observeField("categories_button_pressed", "onCategoriesButtonPressed")
+	m.start_screen.observeField("wishlist_button_pressed", "onWishlistButtonPressed")
 	m.content_select_screen.observeField("content_selected", "onContentSelected")
 	m.category_select_screen.observeField("category_selected", "onCategorySelected") 
 	m.details_screen.observeField("play_button_pressed", "onPlayButtonPressed")
 	m.details_screen.observeField("buy_button_pressed", "onBuyButtonPressed")
 
-	m.category_select_screen.visible = true
-	m.category_select_screen.setFocus(true)
+	m.splash_screen.setFocus(true)
 end function
+
+sub onSplashFinished(obj)
+	? m.splash_screen.getField("splash_finished")
+	if m.splash_screen.getField("splash_finished") = "finished" then
+		m.splash_video = m.splash_screen.findNode("splash_video")
+		m.splash_video.visible = false
+		m.splash_screen.visible = false
+		m.start_screen.setFocus(true)
+		m.start_screen.visible = true
+		? "start", m.start_screen.visible
+	end if
+end sub
 
 sub initializeVideoPlayer()
 	m.videoplayer.EnableCookies()
@@ -29,8 +45,8 @@ end sub
 
 sub onCategorySelected(obj)
 	? "onCategorySelected:", m.category_select_screen.getField("selected_category_content")
-	? "http://10.0.0.167:8080/content/" + m.category_select_screen.getField("selected_category_content") + ".xml"
-	m.content_select_screen.contenturi = "http://10.0.0.167:8080/content/" + m.category_select_screen.getField("selected_category_content") + ".xml"
+	? "http://192.168.43.99:8080/content/" + m.category_select_screen.getField("selected_category_content") + ".xml"
+	m.content_select_screen.contenturi = "http://192.168.43.99:8080/content/" + m.category_select_screen.getField("selected_category_content") + ".xml"
 	? m.content_select_screen.contenturi
 	m.category_select_screen.visible=false
 	m.content_select_screen.visible=true
@@ -59,6 +75,19 @@ sub onBuyButtonPressed(obj)
 	? "scan_poster"
 end sub
 
+sub onCategoriesButtonPressed(obj)
+	? "categories"
+	m.start_screen.visible = false
+	m.category_select_screen.visible = true
+	m.category_select_screen.setFocus(true)
+end sub
+
+sub onWishlistButtonPressed(obj)
+	? "wishlist"
+	m.start_screen.visible = false
+	m.wishlist_screen.visible = true
+	m.wishlist_screen.setFocus(true)
+end sub
 
 sub onPlayerStateChanged(obj)
     state = obj.getData()
@@ -101,6 +130,11 @@ function onKeyEvent(key, press) as Boolean
 			m.videoplayer.visible=false
 			m.details_screen.visible=true
 			m.details_screen.setFocus(true)
+			return true
+		else if m.category_select_screen.visible or m.wishlist_screen.visible
+			m.category_select_screen.visible=false
+			m.start_screen.visible=true
+			m.start_screen.setFocus(true)
 			return true
 		end if
 	end if

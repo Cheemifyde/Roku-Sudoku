@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<component name="home_scene" extends="Scene">
+<component name="home_scene" extends="Scene" initialFocus="splash_screen">
   <script type="text/brightscript" uri="pkg:/components/home_scene.brs" />
   <children>
+    <splash_screen
+      id="splash_screen"
+      visible="true"
+      translation="[0,0]" />
+    <start_screen
+      id="start_screen"
+      visible="false"
+      translation="[0,0]" />
     <category_select_screen
       id="category_select_screen"
       visible="false"
@@ -20,16 +28,13 @@
       translation="[0,0]"
       width="1920"
       height="1080" />
-     <Poster
-      id="scan_poster"
-      uri="http://10.0.0.167:8080/images/thumbnail-placeholder"
-      visible="false"
-      translation="[0,0]"
-      width="1920"
-      height="1080" />
      <Dialog
       title=""
       visible="false"
       id="error_dialog" />
+     <wishlist_screen
+      id="wishlist_screen"
+      visible="false"
+      translation="[0,0]" />
   </children>
 </component>
