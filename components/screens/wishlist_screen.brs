@@ -24,7 +24,6 @@ sub playWishlistAnimation()
 	m.wishlist_video.visible = true
 	m.wishlist_video.setFocus(true)
 	m.wishlist_video.control = "play"
-	? wishlist_video.state
 end sub
 
 ' sub focusWishlist()

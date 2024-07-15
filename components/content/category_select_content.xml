@@ -4,7 +4,7 @@
    <ContentNode title = "" >
     <ContentNode 
       HDPosterUrl = "http://192.168.43.99:8080/images/clothes-thumbnail.png"  
-      description = "HouseholdSelectContent" />
+      description = "ClothesSelectContent" />
     <ContentNode 
       HDPosterUrl = "http://192.168.43.99:8080/images/appliances-thumbnail.png" 
       description = "AppliancesSelectContent" />
@@ -15,8 +15,8 @@
       HDPosterUrl = "http://192.168.43.99:8080/images/games-thumbnail.png" 
       description = "GamesSelectContent" />
     <ContentNode 
-      HDPosterUrl = "http://192.168.43.99:8080/images/clothes-thumbnail.png" 
-      description = "ClothesSelectContent" />
+      HDPosterUrl = "http://192.168.43.99:8080/images/tools-thumbnail.png" 
+      description = "ToolsSelectContent" />
     <ContentNode 
       HDPosterUrl = "http://192.168.43.99:8080/images/accessories-thumbnail.png" 
       description = "AccessoriesSelectContent" />
